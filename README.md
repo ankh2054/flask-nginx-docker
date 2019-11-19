@@ -35,7 +35,7 @@ This ensures that even if your container is lost or deleted, you won't loose you
 
     $ docker run  --name docker.django --expose 80 \
 	 -d -e "VIRTUAL_HOST=nginx.42strings.co.uk" \
-	 -e 'DJANGO_APP_NAME=test' \ 
+	 -e 'FLASK_APP_NAME=test' \ 
  	 -e "LETSENCRYPT_HOST=nginx.42strings.co.uk" \
 	 -e "LETSENCRYPT_EMAIL=info@42strings.co.uk \
 	 -e 'PIP_PACKAGES=flask==1.1.1 gunicorn' \
