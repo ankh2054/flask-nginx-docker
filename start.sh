@@ -27,7 +27,7 @@ autorestart=true
 autostart=true
 
 [program:gunicorn]
-command=gunicorn ${DJANGO_APP_NAME}.wsgi:application --bind 0.0.0.0:8000 --workers 3
+command=gunicorn ${FLASK_APP_NAME}:app --bind 0.0.0.0:8000 --workers 3
 directory=/DATA/www/
 autostart=true
 autorestart=true
