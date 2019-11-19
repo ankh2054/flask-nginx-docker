@@ -32,6 +32,7 @@ RUN echo \
 
 # Add files
 ADD files/nginx.conf /etc/nginx/nginx.conf
+ADD files/www /data/WWW/
 
 # Entrypoint
 ADD start.sh /
