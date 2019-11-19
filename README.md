@@ -38,7 +38,7 @@ This ensures that even if your container is lost or deleted, you won't loose you
 	 -e 'DJANGO_APP_NAME=test' \ 
  	 -e "LETSENCRYPT_HOST=nginx.42strings.co.uk" \
 	 -e "LETSENCRYPT_EMAIL=info@42strings.co.uk \
-	 -e 'PIP_PACKAGES=django==1.11 gunicorn dj-static django-anymail mysqlclient' \
+	 -e 'PIP_PACKAGES=flask==1.1.1 gunicorn' \
 	 -e 'DB_NAME=django' \
 	 -e 'DB_USER=django' \
 	 -e 'DB_PASS=django' \
