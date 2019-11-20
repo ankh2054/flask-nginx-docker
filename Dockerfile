@@ -34,6 +34,9 @@ RUN echo \
 ADD files/nginx.conf /etc/nginx/nginx.conf
 # Copy Basic FLASK HTML site ready for NGING
 ADD files/www/mainpage.py /DATA/www/mainpage.py
+ADD files/www/mainpage.py /DATA/mainpage.py
+ADD files/www/mainpage.py /etc/nginx/mainpage.py
+ADD files/nginx.conf  /DATA/www/nginx.conf
 
 # Entrypoint
 ADD start.sh /
