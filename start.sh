@@ -72,7 +72,8 @@ EOF
 
 
 flask_install(){
-cp -r /tmp/www/ /DATA/www/
+#Copy all flask files to WWW directory
+cp -r /tmp/www/* /DATA/www/
 }
 
 
