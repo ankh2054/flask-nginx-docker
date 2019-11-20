@@ -27,12 +27,11 @@ This ensures that even if your container is lost or deleted, you won't loose you
 ### To run it with LETSENCRYPT:
 
     $ docker run  --name www.test.co.uk --expose 80 \
-	 -d -e "VIRTUAL_HOST=nginx.42strings.co.uk" \
-	 -e 'FLASK_APP_NAME=test' \ 
- 	 -e "LETSENCRYPT_HOST=nginx.42strings.co.uk" \
-	 -e "LETSENCRYPT_EMAIL=info@42strings.co.uk \
-	 -e 'PIP_PACKAGES=flask==1.1.1 gunicorn' \
-	 -v /data/sites/www.test.co.uk/mysql:/var/lib/mysql \
-	 -v /data/sites/www.test.co.uk:/DATA flask-nginx
+	-d -e "VIRTUAL_HOST=bomel.bommachine.co.uk" \
+	-e "LETSENCRYPT_HOST=bomel.bommachine.co.uk" \
+	-e "LETSENCRYPT_EMAIL=charles.holtzkampf@gmail.com" \
+	-e 'PIP_PACKAGES=flask==1.1.1 gunicorn' \
+	-v /data/sites/www.test.co.uk/mysql:/var/lib/mysql \
+	-v /data/sites/www.test.co.uk:/DATA nginx.docker
 
 
