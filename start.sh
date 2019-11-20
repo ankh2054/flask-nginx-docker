@@ -71,12 +71,17 @@ EOF
 }
 
 
+flask_install(){
+cp -r /tmp/www/ /DATA/www
+}
 
 
 # Running all our scripts
+flask_install
 create_www_dir
 apply_www_permissions
 create_supervisor_conf
+pip_install
 
 
 
