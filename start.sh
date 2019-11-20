@@ -77,7 +77,6 @@ EOF
 create_www_dir
 apply_www_permissions
 pip_install
-flask_install
 create_supervisor_conf
 
 
