@@ -33,6 +33,7 @@ RUN echo \
 # Add files
 ADD files/nginx.conf /etc/nginx/nginx.conf
 # Copy Basic FLASK HTML site ready for NGINX
+RUN mkdir -p /DATA/www
 ADD files/www/ /DATA/www/
 
 # Entrypoint
