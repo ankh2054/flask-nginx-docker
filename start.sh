@@ -71,13 +71,6 @@ EOF
 }
 
 
-# DJANGO INSTALL  
-#
-# ################
-
-flask_install(){
-  
-}
 
 
 # Running all our scripts
