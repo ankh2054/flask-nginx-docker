@@ -32,6 +32,6 @@ This ensures that even if your container is lost or deleted, you won't loose you
 	-e "LETSENCRYPT_EMAIL=charles.holtzkampf@gmail.com" \
 	-e 'PIP_PACKAGES=flask==1.1.1 gunicorn' \
 	-v /data/sites/www.test.co.uk/mysql:/var/lib/mysql \
-	-v /data/sites/www.test.co.uk:/DATA nginx.docker
+	-v /data/sites/www.test.co.uk:/DATA flask-nginx 
 
 
