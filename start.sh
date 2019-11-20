@@ -76,7 +76,7 @@ EOF
 # Running all our scripts
 create_www_dir
 apply_www_permissions
-pip_install
+#pip_install
 create_supervisor_conf
 
 
