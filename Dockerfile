@@ -32,7 +32,7 @@ RUN echo \
 
 # Add files
 ADD files/nginx.conf /etc/nginx/nginx.conf
-# Copy Basic FLASK HTML site ready for NGING/
+# Copy Basic FLASK HTML site to TMP folder for copyig during entrypoint
 ADD files/www/ /tmp/www/
 
 # Entrypoint
