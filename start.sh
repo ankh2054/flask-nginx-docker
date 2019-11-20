@@ -42,9 +42,8 @@ EOF
 # ################
 
 create_www_dir() {
-  # Create LOG directoties for NGINX & PHP-FPM
-  echo "Creating www directories"
-  mkdir -p /DATA/www
+  # Create LOG directoties for NGINX
+  echo "Creating www log directory"
   mkdir -p /DATA/logs
 
 }
