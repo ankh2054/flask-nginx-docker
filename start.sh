@@ -72,7 +72,7 @@ EOF
 
 
 flask_install(){
-cp -r /tmp/www /DATA/www
+cp -r /tmp/www/ /DATA/www/
 }
 
 
